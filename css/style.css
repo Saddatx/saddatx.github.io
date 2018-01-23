@@ -149,8 +149,27 @@ body {
   font-size: 25px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 412px) {
+  .page-header__photo {
+   margin: auto;
+  
+   min-width: 200px;
+  }
+  .page-header__photo img {
+    width: 100%;
+  }
+  .page-header__info-about-me {
+    text-align: center;
+    width: 100%;
+  }
   .portfolio li {
-    max-width: 100%;
-  } 
+    max-width: 360px;
+    height: 200px;
+    padding: 0;
+  }
+  .descr__btn p {
+  text-align: center;
+  font-size: 15px;
+}
+  
 }
