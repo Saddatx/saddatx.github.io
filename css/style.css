@@ -150,6 +150,21 @@ body {
   font-size: 25px;
 }
 
+@media screen and (max-width: 690px) {
+  .page-header__photo {
+   margin: auto;
+  
+   min-width: 200px;
+  }
+  .page-header__photo img {
+    width: 100%;
+  }
+  .page-header__info-about-me {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .page-header__photo {
    margin: auto;
@@ -165,13 +180,11 @@ body {
   }
   .portfolio li {
     max-width: 350px;
-    max-height: 250px;
-    
+    max-height: 250px; 
   }
   .descr__btn p {
   text-align: center;
   font-size: 15px;
   margin-top: 8%;
-}
-  
+  } 
 }
