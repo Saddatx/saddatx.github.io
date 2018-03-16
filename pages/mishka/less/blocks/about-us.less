@@ -1,0 +1,152 @@
+.about-us {
+  background: #ffffff url("../../img/zigzag-line-desktop.png") repeat-x;
+  padding-top: 1px;
+  margin-bottom: 60px;
+}
+
+.about-us__wrapper {
+  padding: 0 30px;
+}
+
+.about-us__title {
+  margin: 30px 0;
+  font: bold 24px/30px Tahoma, Arial, sans-serif;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__list-item--icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #63d1bb;
+}
+.about-us__list-item .icon-feature-1 {
+  left: 8px;
+  width: 31.972px;
+	height: 37.301px;
+}
+.about-us__list-item .icon-feature-2 {
+  left: 2px;
+  width: 34.373px;
+	height: 34.373px;
+}
+.about-us__list-item .icon-feature-3 {
+  width: 46.575px;
+  height: 27.332px;
+}
+.about-us__list-item .icon-feature-4 {
+  left: -2px;
+  width: 54.156px;
+  height: 23.183px;
+}
+.about-us__list-item .icon-feature-5 {
+  left: 8px;
+  width: 33.05px;
+	height: 27.857px;
+}
+.about-us__list-item .icon-feature-6 {
+  left: 2px;
+  width: 32.666px;
+	height: 32.486px;
+}
+.about-us__list-item {
+  position: relative;
+  padding-top: 57px;
+  margin-bottom: 55px;
+  font: bold 16px Verdana, Arial, sans-serif;
+}
+
+.about-us__list-item:last-child {
+  margin-bottom: 0;
+}
+
+
+@media @tablet-widths {
+
+  .about-us {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  .about-us__wrapper {
+    .container-fluid();
+  }
+
+  .about-us__title {
+    margin: 50px 0;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+  }
+
+  .about-us__list-item {
+    width: 50%;
+    vertical-align: top;
+    font-size: 20px;
+
+    &--eko,
+    &--ball {
+      order: 1;
+    }
+
+    &--skan,
+    &--rocket {
+      order: 2;
+    }
+
+    &--hart {
+      order: 3;
+    }
+
+    &--box {
+      order: 4;
+    }
+  }
+
+  .about-us__list-item:nth-child(3n) {
+    margin-bottom: 0;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .about-us {
+    margin-bottom: 90px;
+  }
+
+  .about-us__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-us__title {
+    margin-top: 65px;
+    margin-bottom: 55px;
+    margin-left: 17%;
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    margin-left: 175px;
+  }
+
+  .about-us__list-item {
+    width: 350x;
+  }
+
+}

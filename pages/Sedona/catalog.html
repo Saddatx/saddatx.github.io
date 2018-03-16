@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Каталог - Седона</title>
+    <meta name="description" content="предлагаем отдых в мотелях, гастиницых, апартаментах с бассейном, парковкой и личным wi-fi">
+    <meta name="keywords" content="отдых в Аризоне, Седона, гранд каньон, мотель, гостиницы, мост дьявола, visitsedona, тихий отдых, спокойный отдых, отдых, туризм, бассейн">
+    <meta name="author" content="vk.com/id34214149">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="StyleSheet" href="css/normalize.css" type="text/css">
+    <link rel="StyleSheet" href="css/style.min.css" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="menu">
+            <a href="index.html">Информация</a>
+            <a href="#">Фото и видео</a>
+            <a href="index.html" class="menu-logo">
+                <img src="img/menu-logo.png" alt="">
+            </a>
+            <a href="#">Карта штата</a>
+            <a class="menu-active" href="#">Гостиницы</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="filter clearfix">
+            <form method="post" action="/filter">
+                <div class="filter-infrastructure">
+                    <p class="filter-infrastructure-title">Инфраструктура:</p>
+                    <input type="checkbox" id="filter-pool" disabled>
+                    <label class="filter-variant" for="filter-pool">Бассейн</label>
+                    <input type="checkbox" id="filter-parking">
+                    <label class="filter-variant" for="filter-parking">Парковка</label>
+                    <input type="checkbox" id="filter-wifi">
+                    <label class="filter-variant" for="filter-wifi">wi-fi</label>
+                </div>
+                <div class="filter-housing">
+                    <p class="filter-housing-title">Тип жилья:</p>
+                    <input type="checkbox" id="filter-hotel" checked>
+                    <label class="filter-variant" for="filter-hotel">Гостиница</label>
+                    <input type="checkbox" id="filter-motel" checked>
+                    <label class="filter-variant" for="filter-motel">Мотель</label>
+                    <input type="checkbox" id="filter-apartment" checked disabled>
+                    <label class="filter-variant" for="filter-apartment">Апартаменты</label>
+                </div>
+                <div class="filter-price">
+                    <p class="filter-price-title">Стоимость в сутки (Р):</p>
+                    <div class="filter-price-controll">
+                        <div class="filter-price-boundaries">
+                            <input type="text" value="От 0" required>
+                            <input type="text" value="До 30000" required>
+                        </div>
+                        <div class="filter-price-scale">
+                            <div class="filter-scale-toggle filter-min-toggle"></div>
+                            <div class="filter-scale-toggle filter-max-toggle"></div>
+                        </div>
+                    </div>
+                    <button class="filter-btn" type="submit">Показать</button>
+                </div>
+            </form>
+        </div>
+        <div class="options clearfix">
+            <div class="options-left-column">
+                <span class="options-found">Найдено: 3</span>
+                <span class="options-about">Сортировка:</span>
+                <a href="#" class="options-variant options-price options-active">По цене</a>
+                <a href="#" class="options-variant options-type">По типу</a>
+                <a href="#" class="options-variant options-functions">По рейтингу</a>
+            </div>
+            <div class="options-right-column">
+                <a class="options-up-arrow options-active" href="#"></a>
+                <a class="options-down-arrow" href="#"></a>
+            </div>
+        </div>
+        <div class="result">
+            <div class="result-housing clearfix">
+                <div class="result-housing-left">
+                    <figure class="result-housing-img">
+                        <img src="img/result-hotel-amara.jpg" alt="Amara resort & spa">
+                    </figure>
+                    <div class="result-housing-infoblock">
+                        <a class="result-infoblock-title" href="#">Amara resort & spa</a>
+                        <div class="result-about clearfix">
+                            <div class="result-about-housing">
+                                <p class="result-housing-type">Гостиница</p>
+                                <a class="result-housing-more" href="#">Подробнее</a>
+                            </div>
+                            <div class="result-about-booking">
+                                <p class="result-about-price">от 3500 Р.</p>
+                                <a class="result-booking-btn" href="#">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-housing-ratings">
+                    <div class="result-ratings-stars result-ratings-good"></div>
+                    <p class="result-mark-info">Рейтинг: 8,5</p>
+                </div>
+            </div>
+            <div class="result-housing clearfix">
+                <div class="result-housing-left">
+                    <figure class="result-housing-img">
+                        <img src="img/result-hotel-desert.jpg" alt="Desert quail inn">
+                    </figure>
+                    <div class="result-housing-infoblock">
+                        <a class="result-infoblock-title" href="#">Desert quail inn</a>
+                        <div class="result-about clearfix">
+                            <div class="result-about-housing">
+                                <p class="result-housing-type">Мотель</p>
+                                <a class="result-housing-more" href="#">Подробнее</a>
+                            </div>
+                            <div class="result-about-booking">
+                                <p class="result-about-price">от 2000 Р.</p>
+                                <a class="result-booking-btn" href="#">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-housing-ratings">
+                    <div class="result-ratings-stars result-ratings-bad"></div>
+                    <p class="result-mark-info">Рейтинг: 8,9</p>
+                </div>
+            </div>
+            <div class="result-housing clearfix">
+                <div class="result-housing-left">
+                    <figure class="result-housing-img">
+                        <img src="img/result-hotel-villas.jpg" alt="Villas at poco diablo">
+                    </figure>
+                    <div class="result-housing-infoblock">
+                        <a class="result-infoblock-title" href="#">Villas at poco diablo</a>
+                        <div class="result-about clearfix">
+                            <div class="result-about-housing">
+                                <p class="result-housing-type">Апартаменты</p>
+                                <a class="result-housing-more" href="#">Подробнее</a>
+                            </div>
+                            <div class="result-about-booking">
+                                <p class="result-about-price">от 4000 Р.</p>
+                                <a class="result-booking-btn" href="#">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-housing-ratings">
+                    <div class="result-ratings-stars result-ratings-excellent"></div>
+                    <p class="result-mark-info">Рейтинг: 9,2</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <p class="footer-hashtag">#visitsedona</p>
+        <div class="footer-social">
+            <a class="footer-social-btn footer-social-twitter" href="#"></a>
+            <a class="footer-social-btn footer-social-facebook" href="#"></a>
+            <a class="footer-social-btn footer-social-youtube" href="#"></a>
+        </div>
+        <p class="footer-copyright">
+            <span class="footer-copyright-introduction">Website by</span>
+            <a class="footer-copyright-glukhanko" href="#"></a>
+            <span class="footer-copyright-introduction">for</span>
+            <a class="footer-copyright-htmlacademy" href="#"></a>
+        </p>
+    </footer>
+</body>
+
+</html>
