@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Главная страница - Седона</title>
+    <meta name="description" content="предлагаем отдых в отелях и мотелях близ Седоны Тихий и спокойный отдых без туристов, еда и сувениры.">
+    <meta name="keywords" content="отдых в Аризоне, Седона, гранд каньон, мотель, гостиницы, гостиница, апартаменты, мост дьявола, visitsedona, тихий отдых, спокойный отдых, отдых, туризм, бассейн">
+    <meta name="author" content="vk.com/id34214149">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="StyleSheet" href="css/normalize.css" type="text/css">
+    <link rel="StyleSheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="menu">
+            <a class="menu-active" href="#">Информация</a>
+            <a href="#">Фото и видео</a>
+            <a href="index.html" class="menu-logo">
+                <img src="img/menu-logo.png" alt="">
+            </a>
+            <a href="#">Карта штата</a>
+            <a href="catalog.html">Гостиницы</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="card">
+            <p class="card-greetings">Wellcome</p>
+            <p class="card-subgreetings">to the gorgeouse</p>
+            <h1 class="card-title">Sedona</h1>
+            <p class="card-slogan">"Because the Grand Canyon sucks!"</p>
+        </div>
+        <div class="description">
+            <p class="description-definition">Cедона — небольшой городок в аризоне, заслуживающий большего!</p>
+            <p class="description-info">Hассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+        </div>
+        <div class="city">
+            <div class="city-description">
+                <p class="city-description-title">Настоящий городок</p>
+                <p class="city-description-subtitle">№1</p>
+                <p class="city-description-about">Седона не атракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <figure class="city-view">
+                <img src="img/city-view.jpg" alt="Город Седона">
+            </figure>
+        </div>
+        <div class="benefits">
+            <div class="benefits-block benefits-housing">
+                <p class="benefits-block-title">Жилье</p>
+                <p class="benefits-block-about">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="benefits-block benefits-food">
+                <p class="benefits-block-title">Еда</p>
+                <p class="benefits-block-about">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="benefits-block benefits-souvenirs">
+                <p class="benefits-block-title">Сувениры</p>
+                <p class="benefits-block-about">Не только китайского, но и местного производства!</p>
+            </div>
+        </div>
+        <div class="country">
+            <figure class="country-view">
+                <img src="img/country-view.jpg" alt="Город Седона">
+            </figure>
+            <div class="country-description">
+                <p class="country-description-title">Там есть мост дьявола</p>
+                <p class="country-description-subtitle">№2</p>
+                <p class="country-description-about">Да, по нему можно пройти! если конечно вы осмелитесь</p>
+            </div>
+        </div>
+        <div class="benefits benefits-shorty">
+            <div class="benefits-block benefits-numbers benefits-square">
+                <p class="benefits-block-title">Небольшая площадь</p>
+                <p class="benefits-block-subtitle">№3</p>
+                <p class="benefits-block-about">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="benefits-block benefits-numbers benefits-road">
+                <p class="benefits-block-title">Красивая дорога</p>
+                <p class="benefits-block-subtitle">№4</p>
+                <p class="benefits-block-about">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
+            <div class="benefits-block benefits-numbers benefits-tourist">
+                <p class="benefits-block-title">Мало туристов</p>
+                <p class="benefits-block-subtitle">№5</p>
+                <p class="benefits-block-about">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+        </div>
+        <div class="offer">
+            <p class="offer-title">Заинтересовались?</p>
+            <p class="offer-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <div class="offer-block">
+                <a class="offer-btn" href="#">Поиск гостиницы в Седоне</a>
+                <div class="offer-form">
+                    <form method="post" action="/search">
+                        <div class="offer-form-dates">
+                            <div class="offer-form-row clearfix">
+                                <label class="offer-form-label" for="offer-arrive-date">Дата заезда:</label>
+                                <input type="date" id="offer-arrive-date" required>
+                            </div>
+                            <div class="offer-form-row clearfix">
+                                <label class="offer-form-label" for="offer-departure-date">Дата выезда:</label>
+                                <input type="date" id="offer-departure-date" required>
+                            </div>
+                        </div>
+                        <div class="offer-form-row clearfix">
+                            <div class="offer-form-col offer-col-adult clearfix">
+                                <label class="offer-form-label" for="offer-audit-adult">Взрослых:</label>
+                                <input type="text" id="offer-audit-adult" value="2" required>
+                                <a class="offer-controls-subtract" href="#"></a>
+                                <a class="offer-controls-add" href="#"></a>
+                            </div>
+                            <div class="offer-form-col offer-col-junior clearfix">
+                                <label class="offer-form-label" for="offer-audit-junior">Детей:</label>
+                                <input type="text" id="offer-audit-junior" value="1" required>
+                                <a class="offer-controls-subtract" href="#"></a>
+                                <a class="offer-controls-add" href="#"></a>
+                            </div>
+                        </div>
+                        <button class="offer-form-btn" type="submit">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <figure class="map-image">
+                <img src="img/map-image.jpg" alt="Карта Седоны">
+            </figure>
+            <div class="map-script"></div>
+        </div>
+    </main>
+    <footer class="container">
+        <p class="footer-hashtag">#visitsedona</p>
+        <div class="footer-social">
+            <a class="footer-social-btn footer-social-twitter" href="#"></a>
+            <a class="footer-social-btn footer-social-facebook" href="#"></a>
+            <a class="footer-social-btn footer-social-youtube" href="#"></a>
+        </div>
+        <p class="footer-copyright">
+            <span class="footer-copyright-introduction">Website by</span>
+            <a class="footer-copyright-glukhanko" href="#"></a>
+            <span class="footer-copyright-introduction">for</span>
+            <a class="footer-copyright-htmlacademy" href="#"></a>
+        </p>
+    </footer>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false">
+    </script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

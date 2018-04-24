@@ -1,0 +1,148 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  .container-fluid();
+}
+
+.page-footer__logo--hidden {
+  display: none;
+}
+
+.page-footer__social,
+.page-footer__copyright {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+
+}
+
+.page-footer__social {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 35px;
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--icon {
+    fill: #221f1f;
+
+    &-insta {
+      width: 21.769px;
+	    height: 21.334px;
+    }
+
+    &-fb {
+      width: 14.962px;
+	    height: 27.718px;
+    }
+
+    &-tw {
+      width: 23px;
+  	  height: 20.168px;
+    }
+
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      fill: #bde3dd;
+    }
+  }
+
+}
+
+.page-footer__copyright {
+  font: bold 18px/18px Tahoma, Arial, sans-serif;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 25px;
+  font-size: 0;
+}
+
+.icon-htmlacademy {
+  width: 26.943px;
+  height: 34.09px;
+  fill: #63d1bb;
+
+  &:hover {
+      fill: #46c1ae;
+  }
+
+  &:active {
+      fill: #bde3dd;
+  }
+}
+
+
+@media @tablet-widths {
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    width: 102px;
+    height: 34px;
+    margin-right: 14.6%;
+  }
+
+  .footer-logo {
+    width: 102px;
+	  height: 34px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
+
+  }
+
+  .page-footer__logo--hidden {
+    display: block;
+  }
+
+  .page-footer__social {
+    // width: 40%;
+    padding: 0;
+    padding-top: 5px;
+    border-bottom: none;
+  }
+
+  .page-footer__copyright {
+    width: 30%;
+    padding: 0;
+    padding-top: 3px;
+  }
+
+}
+
+@media @desktop-widths {
+  .page-footer {
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+  .page-footer__copyright {
+    text-align: right;
+  }
+
+}
