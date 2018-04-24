@@ -1,100 +1,378 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width-devise-width, initial-scale=1">
-    <title>Сайт для портфолио</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Сайт портфолио</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
-  <body class="container">
-    <section class="page-header">
-      <div class="page-header__photo">
-        <img src="image/1.png" >
-      </div>
-      <div class="page-header__info-about-me">
-        <h1>
-          Тарасов <br>
-          Вячеслав<br>
-        </h1>
-        <div class="my-social-net">
-           <a class="my-social-net__git my-social-net--black" href="https://github.com/Saddatx">Мой гитхаб</a>
-           <a class="my-social-net__vk  my-social-net--black" href="https://vk.com/saddatx">Вконтакте</a>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          меню
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Обо мне</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Контакты</a>
+            </li>
+          </ul>
         </div>
-      </div>  
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/avatar.png" alt="">
+        <h1 class="text-uppercase mb-0">Тарасов Вячеслав</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Веб разработчик</h2>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Портфолио</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/nerds.jpg" alt="nerds">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/mishka.jpg" alt="mishka">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/keksogram.jpg" alt="keksogram">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/nava.jpg" alt="nava">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/sedona.jpg" alt="sedona">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/nl.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="detailed-info">
-      <h2>Обо мне</h2>
-        <p>
-          Огромное желание развиваться в Веб индустрии.Учиться новому ,стать в будущем полноценным frontend-разработчиком. 
-          Готов интенсивно работать и развиваться.
-          Прошел курсы по базовому Html и Css и базовому JavaScript от HtmlacAdemy.Опыт работы с GIt ,фотошоп,адаптивная и кроссбраузерная верстка.
-        </p>
+
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Обо мне</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">Огромное желание развиваться в Веб индустрии.Учиться новому ,стать в будущем полноценным frontend-разработчиком. 
+            Готов интенсивно работать и развиваться.
+            Прошел курсы по базовому Html и Css и базовому JavaScript от HtmlacAdemy.</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">Опыт работы с GIt ,фотошоп,адаптивная и кроссбраузерная верстка.
+            Использую сборщик Gulp, препроцессор less ,фреймворк bootstrap 4,библиотеку jQuery.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <h1 class="portfolio-title">Мои работы</h1>
-    <section class="portfolio">
-      <ul>
-        <li>
-          <a href="pages/nerds/index.html" target="blank">
-            <span class="descr">
-              <div class="descr__btn">
-                <p>Нажмите чтобы перейти на сайт</p>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Связаться со мной</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Имя" required="required" data-validation-required-message="Пожалуйста введите свое имя.">
+                  <p class="help-block text-danger"></p>
+                </div>
               </div>
-            </span>
-          </a>
-          <img src="image/nerds.jpg" alt="nerds">
-        </li>
-        <li>
-          <a href="pages/kekstagram/index.html" target="blank">
-            <span class="descr">
-              <div class="descr__btn">
-                <p>Нажмите чтобы перейти на сайт</p>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Email Address</label>
+                  <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Пожалуйста введите ваш email.">
+                  <p class="help-block text-danger"></p>
+                </div>
               </div>
-            </span>
-          </a>
-          <img src="image/keksogram1.jpg" alt="nerds">
-        </li>
-        <li>
-          <a href="pages/mishka/build/index.html" target="blank">
-            <span class="descr">
-              <div class="descr__btn">
-                <p>Нажмите чтобы перейти на сайт</p>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Phone Number</label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Номер телефона" required="required" data-validation-required-message="Пожалуйста введите свой номер телефона.">
+                  <p class="help-block text-danger"></p>
+                </div>
               </div>
-            </span>
-          </a>
-          <img src="image/mishka.jpg" alt="nerds">
-        </li>
-        <li>
-          <a href="pages/Nava/index.html" target="blank">
-            <span class="descr">
-              <div class="descr__btn">
-                <p>Нажмите чтобы перейти на сайт</p>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Сообщение" required="required" data-validation-required-message="Пожалуйста введите свое сообщение."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
               </div>
-            </span>
-          </a>
-          <img src="image/nava.jpg" alt="nerds">
-        </li>
-        <li>
-          <a href="pages/nl-email/index.html" target="blank">
-            <span class="descr">
-              <div class="descr__btn">
-                <p>Нажмите чтобы перейти на сайт</p>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Отправить</button>
               </div>
-            </span>
-          </a>
-          <img src="image/nl.jpg" alt="nerds">
-        </li>
-        <li>
-          <a href="pages/Sedona/index.html" target="blank">
-            <span class="descr">
-              <div class="descr__btn">
-                <p>Нажмите чтобы перейти на сайт</p>
-              </div>
-            </span>
-          </a>
-          <img src="image/sedona.jpg" alt="nerds">
-        </li>
-      </ul>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Я в сети </h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle"  target="_blank" href="https://vk.com/saddatx">
+                  <i class="fa fa-fw fa-vk"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://github.com/Saddatx">
+                  <i class="fa fa-fw fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Nerds</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/nerds.jpg" alt="">
+              <p class="mb-5">Резиновая верстка с помощью flexbox. Сверстана главная страница и магазин плюс немного js</p>
+              <a class="btn btn-primary btn-lg rounded-pill " target="_blank" href="pages/nerds/index.html">
+                Перейти на страницу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Mishka</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/mishka.jpg" alt="">
+              <p class="mb-5">Адаптивный верстка, использовались препроцессор less и сборщик gulp.</p>
+              <a class="btn btn-primary btn-lg rounded-pill" target="_blank" href="pages/mishka/build/index.html">
+                Перейти на страницу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Кekstagram</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/keksogram.jpg" alt="">
+              <p class="mb-5">Вся логика сайта написана на чистом JS так что смотрите код на гитхабе</p>
+              <a class="btn btn-primary btn-lg rounded-pill" target="_blank" href="pages/kekstagram/index.html">
+                 Перейти на страницу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Nava</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/nava.jpg" alt="nava">
+              <p class="mb-5">Фиксированная верстка, плюс немного js.</p>
+              <a class="btn btn-primary btn-lg rounded-pill" href="pages/Nava/index.html">
+                Перейти на страницу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Sedona</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/sedona.jpg" alt="sedona">
+              <p class="mb-5">Резиновая верстка с помощью flexbox. Сверстана главная  и страница гостиницы.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                Перейти на страницу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Nl-content</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/nl.jpg" alt="">
+              <p class="mb-5"></p>
+              <a class="btn btn-primary btn-lg rounded-pill " target="_blank" href="pages/nl-email/index.html">
+                Перейти на страницу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
   </body>
+
 </html>
